@@ -6,5 +6,5 @@ User = get_user_model()
 
 class SignupForm(UserCreationForm):
     class Meta:
-        model = User  # model = get_user_model() は NG
+        model = User
         fields = ("username", "email")
